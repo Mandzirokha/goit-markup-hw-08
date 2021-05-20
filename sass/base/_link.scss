@@ -1,0 +1,33 @@
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-cl);
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+
+.link__current {
+  position: relative;
+  padding-bottom: 32px;
+
+  color: var(--accent-cl);
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--accent-cl);
+    bottom: 0;
+  }
+}

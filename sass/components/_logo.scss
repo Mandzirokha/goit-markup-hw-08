@@ -1,0 +1,18 @@
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &__web {
+    color: var(--accent-cl);
+  }
+
+  &__studio--dark {
+    color: var(--title-cl);
+  }
+
+  &__studio--light {
+    color: var(--alt-tittle-cl);
+  }
+}
