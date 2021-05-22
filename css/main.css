@@ -22,6 +22,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 body {
@@ -51,12 +52,45 @@ p {
   background-color: var(--section__bg);
 }
 
+@media screen and (max-width: 1199px) {
+  .section--hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section--hidden {
+    padding-top: 0px;
+  }
+}
+
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: salmon;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    background-color: skyblue;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    background-color: slateblue;
+  }
 }
 
 .visually-hidden {
@@ -78,7 +112,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -183,21 +217,35 @@ img {
 .page-title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--alt-tittle-cl);
 }
 
+@media screen and (min-width: 1200px) {
+  .page-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-cl);
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .subtitle {
@@ -209,13 +257,23 @@ img {
 }
 
 .modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: var(--title-cl);
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
   margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--title-cl);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    width: 448px;
+    line-height: 1.15;
+  }
 }
 
 .btn {
@@ -264,14 +322,28 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   left: 50%;
-  top: 222px;
+  top: 93px;
   transform: translate(-50%);
   background-color: var(--alt-tittle-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 208px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    top: 222px;
+  }
 }
 
 .modal__btn {
@@ -318,7 +390,7 @@ img {
 
 .contact-form__field {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -328,6 +400,12 @@ img {
   border-radius: 4px;
   outline: none;
   transition: border 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form__field {
+    width: 448px;
+  }
 }
 
 .contact-form__field:focus {
@@ -350,11 +428,17 @@ img {
 .contact-form__message {
   padding: 12px 16px;
   resize: none;
-  width: 448px;
+  width: 370px;
   height: 120px;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form__message {
+    width: 448px;
+  }
 }
 
 .contact-form__message::placeholder {
@@ -385,6 +469,18 @@ img {
 .checkbox--checked:checked + .checkbox__icon-svg {
   background-color: var(--accent-cl);
   border-color: var(--accent-cl);
+}
+
+.checkbox__text {
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .btn-set {
@@ -497,8 +593,25 @@ img {
   background-color: #c4c4c4;
 }
 
-.feature {
-  padding-bottom: 0;
+@media screen and (min-width: 480px) {
+  .overlay {
+    max-width: 480px;
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    min-height: 600px;
+  }
 }
 
 .card-set {
@@ -518,10 +631,27 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
   background-color: var(--section__bg);
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .feature__icons {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature__icons {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__icons {
+    width: 270px;
+  }
 }
 
 .feature__icons-svg {
@@ -570,9 +700,21 @@ img {
 }
 
 .card-set > .card-set__team-item {
-  flex-basis: calc((100% - 4 * var(--card-set-gap)) / 4);
+  flex-basis: 100%;
   margin-top: var(--card-set-gap);
   margin-right: var(--card-set-gap);
+}
+
+@media screen and (min-width: 768px) {
+  .card-set > .card-set__team-item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set > .card-set__team-item {
+    flex-basis: calc((100% - 4 * var(--card-set-gap)) / 4);
+  }
 }
 
 .card-set__position {
@@ -590,18 +732,36 @@ img {
 
 .client-list {
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1199px) {
+  .client-list {
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-right: calc(-1 * var(--card-set-gap));
+  }
 }
 
 .client-list__item {
+  width: 170px;
+  height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
 }
 
-.client-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 1199px) {
+  .client-list__item {
+    flex-basis: calc((100% - 2 * var(--card-set-gap)) / 2);
+    margin-top: var(--card-set-gap);
+    margin-right: var(--card-set-gap);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .client-list__link {

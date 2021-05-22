@@ -6,6 +6,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 body {
@@ -35,12 +36,37 @@ p {
   }
 }
 
+.section--hidden {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0px;
+  }
+}
+
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: salmon;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-color: skyblue;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    background-color: slateblue;
+  }
 }
 
 .visually-hidden {
@@ -62,6 +88,6 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }

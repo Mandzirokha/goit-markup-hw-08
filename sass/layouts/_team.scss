@@ -12,9 +12,17 @@
 }
 
 .card-set > .card-set__team-item {
-  flex-basis: calc((100% - 4 * var(--card-set-gap)) / 4);
+  flex-basis: 100%;
   margin-top: var(--card-set-gap);
   margin-right: var(--card-set-gap);
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * var(--card-set-gap)) / 4);
+  }
 }
 
 .card-set__position {
