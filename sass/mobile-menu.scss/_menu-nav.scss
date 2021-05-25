@@ -16,9 +16,13 @@
 }
 
 .mobile-menu__tel {
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.25;
   color: var(--accent-cl);
+
+  @media screen and(min-width:480px) {
+    font-size: 34px;
+  }
 }
 
 .mobile-menu__email {
@@ -33,10 +37,14 @@
 
 .mobile-menu__social-link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-cl);
+
+  @media screen and(min-width:480px) {
+    font-size: 18px;
+  }
 }
 
 .mobile-menu__social:not(:last-child) {

@@ -258,63 +258,65 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="first-bg page-footer">
       <div class="container page-footer__container">
-        <div class="address-container">
-          <div class="logo page-footer__logo">
-            <a class="link" href="./index.html"><span class="logo logo__web">Web</span><span class="logo logo__studio logo__studio--light">Studio</span></a>
+        <div class="page-footer__holder">
+          <div class="address-container">
+            <div class="logo page-footer__logo">
+              <a class="link" href="./index.html"><span class="logo logo__web">Web</span><span class="logo logo__studio logo__studio--light">Studio</span></a>
+            </div>
+            <address class="address">
+              <ul class="list">
+                <li class="address__footer">
+                  <a class="link address__street-info" href="https://goo.gl/maps/ryUQpqb8uxzXQefP9">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="address__footer">
+                  <a class="link address__contact-info" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li>
+                  <a class="link address__contact-info" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
           </div>
-          <address class="address">
-            <ul class="list">
-              <li class="address__footer">
-                <a class="link address__street-info" href="https://goo.gl/maps/ryUQpqb8uxzXQefP9">г. Киев, пр-т Леси Украинки, 26</a>
+          <div class="page-footer__invite-container">
+            <h3 class="subtitle page-footer__title">Присоединяйтесь</h3>
+            <ul class="list social-icons">
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link social-icons__link--footer" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icons__svg social-icons__svg--footer">
+                    <use href="./images/studio/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__footer">
-                <a class="link address__contact-info" href="mailto:info@example.com">info@example.com</a>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link social-icons__link--footer" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icons__svg social-icons__svg--footer">
+                    <use href="./images/studio/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="link address__contact-info" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link social-icons__link--footer" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icons__svg social-icons__svg--footer">
+                    <use href="./images/studio/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="" class="social-icons__link social-icons__link--footer" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icons__svg social-icons__svg--footer">
+                    <use href="./images/studio/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="page-footer__invite-container">
-          <h3 class="subtitle page-footer__title">Присоединяйтесь</h3>
-          <ul class="list social-icons">
-            <li class="social-icons__item">
-              <a href="" class="social-icons__link social-icons__link--footer" target="_blank" rel="noopener noreferrer">
-                <svg class="social-icons__svg social-icons__svg--footer">
-                  <use href="./images/studio/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons__item">
-              <a href="" class="social-icons__link social-icons__link--footer" target="_blank" rel="noopener noreferrer">
-                <svg class="social-icons__svg social-icons__svg--footer">
-                  <use href="./images/studio/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons__item">
-              <a href="" class="social-icons__link social-icons__link--footer" target="_blank" rel="noopener noreferrer">
-                <svg class="social-icons__svg social-icons__svg--footer">
-                  <use href="./images/studio/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons__item">
-              <a href="" class="social-icons__link social-icons__link--footer" target="_blank" rel="noopener noreferrer">
-                <svg class="social-icons__svg social-icons__svg--footer">
-                  <use href="./images/studio/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="page-footer__subscribe-container">
           <h3 class="subtitle page-footer__title">Подпишитесь на рассылку</h3>
           <div>
-            <form>
+            <form class="page-footer__form">
               <label><input class="page-footer__input" type="email" name="user-email" placeholder="E-mail" autocomplete="nope" /></label>
               <button class="btn page-footer__btn" type="submit">
                 Подписаться

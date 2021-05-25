@@ -1,7 +1,13 @@
 .btn-set {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
   &__portfolio-btn {
     padding: 6px 22px;
@@ -31,5 +37,11 @@
 
   &__box:not(:last-child) {
     margin-right: 8px;
+  }
+}
+
+.btn-set__box:nth-child(-n + 3) {
+  @media screen and(max-width:767px) {
+    margin-bottom: 15px;
   }
 }

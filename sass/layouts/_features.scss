@@ -1,9 +1,7 @@
-.feature {
-}
-
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   margin-top: calc(-1 * var(--card-set-gap));
   margin-right: calc(-1 * var(--card-set-gap));
@@ -20,12 +18,14 @@
   justify-content: center;
   align-items: center;
 
-  height: 120px;
-  background-color: var(--section__bg);
-
   margin-bottom: 30px;
 
-  @media screen and (max-width: 767px) {
+  width: 290px;
+  height: 120px;
+
+  background-color: var(--section__bg);
+
+  @media screen and (min-width: 480px) {
     width: 450px;
   }
 
