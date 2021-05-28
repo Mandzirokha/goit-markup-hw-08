@@ -13,10 +13,13 @@
 }
 
 .portfolio__item {
-  display: flex;
-  // flex-flow: 2;
   box-shadow: none;
   transition: box-shadow 250ms var(--timing-function);
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+  }
 
   &:hover,
   &:focus {
@@ -24,6 +27,10 @@
   }
 
   .card-set > & {
+    // @media screen and (max-width: 767px) {
+    //   flex-basis: calc((100% - 1 * var(--card-set-gap)) / 1);
+    // }
+
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 2 * var(--card-set-gap)) / 2);
     }
@@ -34,6 +41,12 @@
 
     margin-top: var(--card-set-gap);
     margin-right: var(--card-set-gap);
+  }
+}
+
+.card-set:last-child {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: flex-start;
   }
 }
 
