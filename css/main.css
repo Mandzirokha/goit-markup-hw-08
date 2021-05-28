@@ -129,8 +129,19 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.link:hover, .link:focus {
+.link:hover,
+.link:focus {
   color: var(--accent-cl);
+}
+
+.link--modified {
+  color: var(--main-text-cl);
+  transition: color 250ms var(--timing-function);
+}
+
+.link--modified:hover,
+.link--modified:focus {
+  color: var(--main-text-cl);
 }
 
 .link__current {
@@ -165,7 +176,8 @@ img {
   z-index: 6;
 }
 
-.mobile-menu__btn:hover, .mobile-menu__btn:focus {
+.mobile-menu__btn:hover,
+.mobile-menu__btn:focus {
   fill: var(--accent-cl);
 }
 
@@ -333,7 +345,8 @@ img {
   transition: background-color 250ms var(--timing-function);
 }
 
-.social-icons__link:hover, .social-icons__link:focus {
+.social-icons__link:hover,
+.social-icons__link:focus {
   background-color: var(--accent-cl);
 }
 
@@ -342,7 +355,8 @@ img {
   transition: background-color 250ms var(--timing-function);
 }
 
-.social-icons__link--footer:hover, .social-icons__link--footer:focus {
+.social-icons__link--footer:hover,
+.social-icons__link--footer:focus {
   background-color: var(--accent-cl);
 }
 
@@ -437,7 +451,8 @@ img {
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: var(--alt-tittle-cl);
   background-color: var(--accent-cl);
 }
@@ -686,10 +701,12 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   box-shadow: none;
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
-.btn-set__portfolio-btn:hover, .btn-set__portfolio-btn:focus {
+.btn-set__portfolio-btn:hover,
+.btn-set__portfolio-btn:focus {
   color: var(--alt-tittle-cl);
   background-color: var(--accent-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -817,7 +834,8 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/desktop/hero/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../images/desktop/hero/hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -830,13 +848,17 @@ img {
     min-height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/mobile/hero/hero.jpg');
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/hero@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/mobile/hero/hero@2x.jpg');
   }
 }
 
@@ -846,13 +868,17 @@ img {
     min-height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero/hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/tablet/hero/hero.jpg');
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero/hero@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/tablet/hero/hero@2x.jpg');
   }
 }
 
@@ -862,13 +888,17 @@ img {
     min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/hero@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/desktop/hero/hero@2x.jpg');
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/hero@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/desktop/hero/hero@2x.jpg');
   }
 }
 
@@ -1036,7 +1066,8 @@ img {
   transition: border-color 250ms var(--timing-function);
 }
 
-.client-list__link:hover, .client-list__link:focus {
+.client-list__link:hover,
+.client-list__link:focus {
   border-color: var(--accent-cl);
 }
 
@@ -1229,12 +1260,19 @@ img {
   transform: translateY(0%);
 }
 
+.portfolio__card {
+  display: flex;
+  flex-direction: column;
+}
+
 .portfolio__item {
+  display: flex;
   box-shadow: none;
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.portfolio__item:hover, .portfolio__item:focus {
+.portfolio__item:hover,
+.portfolio__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
