@@ -20,6 +20,7 @@
 .page-footer__holder {
   @media screen and(min-width: 768px) {
     display: flex;
+    justify-content: space-around;
     align-items: baseline;
     margin-bottom: 60px;
   }
@@ -69,10 +70,6 @@
 .page-footer__invite-container {
   @media screen and(max-width: 767px) {
     margin-bottom: 60px;
-  }
-
-  @media screen and(min-width: 768px) {
-    margin-left: auto;
   }
 
   @media screen and(min-width: 1200px) {
